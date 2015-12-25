@@ -3,6 +3,7 @@ function toCamelCase(input, separator) {
         return $1.toUpperCase();
     });
 }
+var scToCc = toCamelCase;
 
 function toSnakeCase(input, separator) {
     separator = separator || '_';
@@ -10,3 +11,5 @@ function toSnakeCase(input, separator) {
         return separator + $0.toLowerCase();
     });
 }
+
+var ccToSc = toSnakeCase;
